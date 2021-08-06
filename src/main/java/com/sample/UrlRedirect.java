@@ -9,6 +9,8 @@ import java.io.IOException;
 public class UrlRedirect extends HttpServlet {
     private static final String VALID_REDIRECT = "http://cwe.mitre.org/data/definitions/601.html";
 
+    private static final String MOI_TEST = "test_string"
+        
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         // BAD: a request parameter is incorporated without validation into a URL redirect
